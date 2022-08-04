@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-GlobalVariable.Code_CreationResponse = WS.sendRequest(findTestObject('providerCreation/codeCreation_Sandbox'))
+GlobalVariable.GCR_creation_Sandbox = WS.sendRequest(findTestObject('providerCreation/GCR_Creation_Sandbox'))
 
-WS.verifyResponseStatusCode(GlobalVariable.Code_CreationResponse, 200)
+WS.verifyResponseStatusCode(GlobalVariable.GCR_creation_Sandbox, 200)
 

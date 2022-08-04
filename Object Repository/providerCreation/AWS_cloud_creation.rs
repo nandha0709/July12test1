@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;provider_type_id\&quot;: 1,\n  \&quot;name\&quot;: \&quot;Test408\&quot;,\n  \&quot;description\&quot;: \&quot;Testing\&quot;,\n  \&quot;access_type_id\&quot;: 2,\n  \&quot;access_key\&quot;: \&quot;AKIASWXVFHNHQXZEUPGO\&quot;,\n  \&quot;secret_key\&quot;: \&quot;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\&quot;,\n  \&quot;default_region_id\&quot;: 7\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;provider_type_id\&quot;: 1,\n  \&quot;name\&quot;: ${name},\n  \&quot;description\&quot;: \&quot;Testing\&quot;,\n  \&quot;access_type_id\&quot;: 2,\n  \&quot;access_key\&quot;: \&quot;AKIASWXVFHNHQXZEUPGO\&quot;,\n  \&quot;secret_key\&quot;: \&quot;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\&quot;,\n  \&quot;default_region_id\&quot;: 7\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -28,7 +28,7 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>461d9dfe5cc5367307ebb055941291e127c2b9c58401d1bfd89251913613412f</value>
+      <value>a89e1cbd1838270fc7fcbf38777dd43e86d29abc0e37342c0f654546a918a58d</value>
       <webElementGuid>fb8523bc-1430-442e-abf3-f2662e7d6799</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
@@ -60,6 +60,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>'test2022'</defaultValue>
+      <description></description>
+      <id>affecc04-ec44-42ae-9b66-606d560c2a4f</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

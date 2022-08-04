@@ -7,10 +7,10 @@
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>0</connectionTimeout>
-   <followRedirects>false</followRedirects>
+   <followRedirects>true</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;provider_type_id\&quot;: 5,\n  \&quot;name\&quot;: \&quot;aug0208\&quot;,\n  \&quot;description\&quot;: \&quot;Testing\&quot;,\n  \&quot;access_type_id\&quot;: 6,\n  \&quot;user_name\&quot;: \&quot;nandha0709\&quot;,\n  \&quot;vcs_org_ids\&quot;: [\n    \&quot;Testingqa2022\&quot;\n  ],\n  \&quot;password\&quot;: \&quot;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\&quot;,\n  \&quot;sync_user_repos\&quot;: true\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;provider_type_id\&quot;: 5,\n  \&quot;name\&quot;: ${codename},\n  \&quot;description\&quot;: \&quot;test\&quot;,\n  \&quot;access_type_id\&quot;: 6,\n  \&quot;user_name\&quot;: \&quot;nandha0709\&quot;,\n  \&quot;vcs_org_ids\&quot;: [\n    \&quot;Testingqa2022\&quot;\n  ],\n  \&quot;password\&quot;: \&quot;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\&quot;,\n  \&quot;sync_user_repos\&quot;: true\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -36,7 +36,7 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>461d9dfe5cc5367307ebb055941291e127c2b9c58401d1bfd89251913613412f</value>
+      <value>a89e1cbd1838270fc7fcbf38777dd43e86d29abc0e37342c0f654546a918a58d</value>
       <webElementGuid>4a0d3c45-7592-447d-9d96-c465d483823b</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
@@ -60,6 +60,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.githubname</defaultValue>
+      <description></description>
+      <id>94e01069-5ee4-41eb-9780-b4aaa8cdaff1</id>
+      <masked>false</masked>
+      <name>codename</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
